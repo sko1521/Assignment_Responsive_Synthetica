@@ -1,0 +1,13 @@
+@mixin icon-transformX($val1,$val2,$val3) {
+  -webkit-transform: rotate($val1) translate($val2, $val3) ;
+  -moz-transform: rotate($val1) translate($val2, $val3) ;
+  -ms-transform: rotate($val1) translate($val2, $val3) ;
+   transform: rotate($val1) translate($val2, $val3) ;
+}
+
+@mixin icon-transformY($val1,$val2,$val3) {
+  -webkit-transform: rotate($val1) translate($val2, $val3) ;
+  -moz-transform: rotate($val1) translate($val2, $val3) ;
+  -ms-transform: rotate($val1) translate($val2, $val3) ;
+   transform: rotate($val1) translate($val2, $val3) ;
+}
