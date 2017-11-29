@@ -18,6 +18,11 @@ div {
   vertical-align: baseline;
   background: transparent; }
 
+video {
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0; }
+
 .container-header {
   background-color: #414A52;
   border-bottom: 4px solid #7AE2DE; }
@@ -156,5 +161,197 @@ div {
       border-radius: 50%;
       cursor: pointer;
       border: 2px solid white; }
+
+.video-container {
+  padding-top: 85px;
+  width: 100%;
+  margin-bottom: 50px; }
+  .video-container .video-content {
+    padding: 0px 10px; }
+
+.video-info p {
+  color: #414A52;
+  font-size: 15px;
+  line-height: 28px;
+  padding-bottom: 25px; }
+
+.video {
+  margin-bottom: 50px; }
+  .video .vid-style {
+    background-color: #000; }
+    .video .vid-style .vid-control {
+      width: 100%;
+      height: 260px; }
+
+.team-info {
+  width: 100%;
+  background-color: #F4F6F9;
+  padding: 78px 0; }
+  .team-info .team-member {
+    padding: 0 10px; }
+
+.team-gallery .team-sec {
+  cursor: pointer;
+  margin-bottom: 12px; }
+  .team-gallery .team-sec:hover .team-member {
+    display: block; }
+  .team-gallery .team-sec .first-member {
+    background: url("../img/first-member.jpg") no-repeat;
+    height: 354px;
+    background-size: 100%; }
+  .team-gallery .team-sec .sec-member {
+    background: url("../img/crew-blaz-robar.jpg") no-repeat;
+    height: 354px;
+    background-size: 100%; }
+  .team-gallery .team-sec .third-member {
+    background: url("../img/crew-mary-lou.jpg") no-repeat;
+    height: 354px;
+    background-size: 100%; }
+  .team-gallery .team-sec .fourth-member {
+    background: url("../img/crew-dude.jpg") no-repeat;
+    height: 354px;
+    background-size: 100%; }
+
+.member-details {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  background: rgba(122, 226, 222, 0.8);
+  text-align: center;
+  display: none; }
+
+.member-primary-info {
+  position: absolute;
+  top: 35%;
+  font-size: 15px;
+  color: #fff; }
+  .member-primary-info h2 {
+    font-weight: 500;
+    line-height: 21px; }
+  .member-primary-info p {
+    padding: 23px 10px;
+    line-height: 27px; }
+
+.skill-rating {
+  margin-top: 50px;
+  padding: 10px 10px; }
+
+.skill-heading h5 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #414A52; }
+  .skill-heading h5 span {
+    float: right; }
+
+.bar-container {
+  background-color: #000; }
+  .bar-container .meter {
+    height: 10px;
+    margin: 10px 0;
+    background-color: #7AE2DE; }
+    .bar-container .meter.range-1 {
+      width: 90%; }
+    .bar-container .meter.range-2 {
+      width: 95%; }
+    .bar-container .meter.range-3 {
+      width: 80%; }
+    .bar-container .meter.range-4 {
+      width: 90%; }
+
+.skill-rating::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.team-sec:hover .member-details {
+  display: block; }
+
+.progressbar {
+  width: 100%;
+  height: 9px;
+  background-color: #000;
+  margin: .6em 0;
+  clear: both; }
+
+.progress1, .progress2, .progress3, .progress4 {
+  background: #7AE2DE;
+  height: 9px;
+  width: 0%;
+  max-width: 100%;
+  float: left; }
+
+.progress1 {
+  animation: progress1 2s 1 forwards; }
+
+.progress2 {
+  animation: progress2 2s 1 forwards; }
+
+.progress3 {
+  animation: progress3 2s 1 forwards; }
+
+.progress4 {
+  animation: progress4 2s 1 forwards; }
+
+.loader {
+  height: 9px;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/bar.gif") repeat-x;
+  opacity: 0.25; }
+
+@keyframes progress1 {
+  to {
+    width: 95%; } }
+@keyframes progress2 {
+  to {
+    width: 80%; } }
+@keyframes progress3 {
+  to {
+    width: 90%; } }
+@keyframes progress4 {
+  to {
+    width: 90%; } }
+h4 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 60px; }
+  h4:after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+    content: '';
+    background-color: #7AE2DE; }
+
+.award-record {
+  padding: 80px 10px;
+  background: url("../img/stats-bg.jpg") no-repeat;
+  background-size: cover; }
+  .award-record .award-section {
+    padding: 0 8px;
+    margin: 0 auto; }
+    .award-record .award-section .award-cup {
+      background: url("../img/iconcup.png") no-repeat 33px 13px;
+      height: 100px;
+      padding-left: 40%;
+      color: #fff; }
+    .award-record .award-section .award-book {
+      background: url("../img/iconbook.png") no-repeat 33px 13px;
+      height: 100px;
+      padding-left: 40%;
+      color: #fff; }
+    .award-record .award-section .award-pen {
+      background: url("../img/iconpen.png") no-repeat 33px 13px;
+      height: 100px;
+      padding-left: 40%;
+      color: #fff; }
+
+.stat-num {
+  font-size: 44px; }
+
+.stat-txt {
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

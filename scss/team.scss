@@ -1,0 +1,154 @@
+.team-info{
+    width: 100%;
+    background-color:$team-backrground;
+    padding: 78px 0;
+    .team-member{
+        padding: 0 10px;
+    }
+}
+.team-gallery{
+    .team-sec{
+        cursor: pointer;
+        margin-bottom: 12px;
+        &:hover{
+            .team-member{
+                display: block;
+            }
+        }
+        .first-member{
+            background: url('../img/first-member.jpg') no-repeat;
+            height:354px;
+            background-size: 100%;
+        }
+        .sec-member{
+            background: url('../img/crew-blaz-robar.jpg') no-repeat;
+            height:354px;
+            background-size: 100%;
+        }
+        .third-member{
+            background: url('../img/crew-mary-lou.jpg') no-repeat;
+            height:354px;
+            background-size: 100%;
+        }
+        .fourth-member{
+            background: url('../img/crew-dude.jpg') no-repeat;
+            height: 354px;
+            background-size: 100%;
+        }
+    }
+}
+.member-details{
+    position: relative;
+    width:100%;
+    height: inherit;
+    background: rgba(122,226,222, 0.8);
+    text-align: center;
+    display:none;
+}    
+    .member-primary-info{
+        position: absolute;
+        top:35%;
+        font-size: 15px;
+        color:$name-color;
+        h2{
+            font-weight:500;
+            line-height: 21px;
+        }
+        p{
+            padding: 23px 10px;
+            line-height: 27px;
+        }
+    }
+
+.skill-rating{
+    margin-top: 50px;
+    padding: 10px 10px;
+}
+
+.skill-heading{
+    h5{
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $txt-color;
+        span{
+            float: right;
+        }
+    }
+}
+.bar-container{
+    background-color: #000;
+    .meter{
+        height: 10px;
+        margin: 10px 0;
+        background-color: $border-col-1;
+        &.range-1{
+            width:90%;
+        }
+        &.range-2{
+            width:95%;
+        }
+        &.range-3{
+            width:80%;
+        }
+        &.range-4{
+            width:90%;
+        }
+    }
+}
+.skill-rating::after{
+    @include floatClear;
+}
+.team-sec:hover .member-details{
+    display: block;
+}
+
+.progressbar {
+    width: 100%;
+    height: 9px;
+    background-color: #000;
+    margin: .6em 0;
+    clear: both;
+}
+
+.progress1, .progress2, .progress3, .progress4 {
+    background: $border-col-1;
+    height: 9px;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+}
+.progress1{
+    animation: progress1 2s 1 forwards;
+}
+.progress2{
+    animation: progress2 2s 1 forwards;
+}
+.progress3{
+    animation: progress3 2s 1 forwards;
+}
+.progress4{
+    animation: progress4 2s 1 forwards;
+}
+
+
+.loader {
+    height: 9px;
+    width: 100%;
+    overflow: hidden;
+    background: url('../img/bar.gif') repeat-x;
+    opacity: 0.25;
+}
+
+@keyframes progress1 { 
+    from { } to { width: 95% }
+}
+@keyframes progress2 { 
+    from { } to { width: 80% }
+}
+@keyframes progress3 { 
+    from { } to { width: 90% }
+}
+@keyframes progress4 { 
+    from { } to { width: 90% }
+}

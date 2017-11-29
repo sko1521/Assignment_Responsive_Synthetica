@@ -1,0 +1,33 @@
+.award-record{
+    padding: 80px 10px;
+    background: url('../img/stats-bg.jpg') no-repeat;
+    background-size: cover;
+    .award-section{
+        padding: 0 8px;
+        margin: 0 auto;
+        .award-cup{
+            background: url('../img/iconcup.png') no-repeat 33px 13px;
+            height:100px;
+            padding-left: 40%;
+            color:$name-color;
+        }
+        .award-book{
+            background: url('../img/iconbook.png') no-repeat 33px 13px;
+            height:100px;
+            padding-left: 40%;
+            color:$name-color;
+        }
+        .award-pen{
+            background: url('../img/iconpen.png') no-repeat 33px 13px;
+            height:100px;
+            padding-left: 40%;
+            color:$name-color;
+        }
+    }
+}
+.stat-num{
+    font-size:44px;
+}
+.stat-txt{
+    font-size: 15px;
+}

@@ -11,3 +11,9 @@
   -ms-transform: rotate($val1) translate($val2, $val3) ;
    transform: rotate($val1) translate($val2, $val3) ;
 }
+
+@mixin floatClear{
+	content: "";
+	display: table;
+  clear: both;
+}
